@@ -12,6 +12,10 @@ import java.util.List;
  */
 public class TransferUSSDCoder {
 
+    public static String code(String str) {
+        return code(str, VersionCode.ACTUAL_VERSION);
+    }
+
     public static String code(String str, VersionCode code) {
         List iBu38aCLWSsRGhH;
         String str2;
