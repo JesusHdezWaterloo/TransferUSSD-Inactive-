@@ -15,7 +15,7 @@ public class Operations {
 
     public static String transferir(String cuentaDestino, String importe, int monedaImporte,
             int monedaTarjeta, String cuentaOrigen, String movilAConfirmar, int enviarMiMovil, String smsMiMovil) {
-        String concat = cuentaDestino + "*" + importe + "*" + monedaImporte + "*" + monedaTarjeta + "*" + cuentaOrigen + "*" + enviarMiMovil + "*" + smsMiMovil;
+        String concat = cuentaDestino + "*" + importe + "*" + monedaImporte + "*" + monedaTarjeta + "*" + cuentaOrigen + "*" + movilAConfirmar + "*" + enviarMiMovil + "*" + smsMiMovil;
         String texter = TransferUSSDCoder.code(concat);
         String ussdCode = "*" + "444" + "*" + "45" + "*" + texter + "*" + coder.VersionCode.TRANSFER_VERSION + Utils.encode("#");
         return ussdCode;
