@@ -17,6 +17,7 @@ public class VersionCode {
 
     public static final VersionCode ACTUAL_VERSION = CODE_VERSION_70809152182382;
 
+    public static final String TRANSFER_VERSION = "1200309";
     private String code_version;
 
     private String crude_code;
