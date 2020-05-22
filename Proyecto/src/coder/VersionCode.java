@@ -1,8 +1,5 @@
 package coder;
 
-import lombok.Getter;
-import lombok.Setter;
-
 /**
  * Clase que contiene las llaves para el cifrado de los codigos USSD en
  * dependencia de la versión.<\br>
@@ -19,15 +16,21 @@ public class VersionCode {
 
     public static final VersionCode ACTUAL_VERSION = CODE_VERSION_11811022182382;
 
-    @Getter
     private String code_version;
 
-    @Getter
     private String crude_code;
 
     public VersionCode(String code_version, String crude_code) {
         this.code_version = code_version;
         this.crude_code = crude_code;
+    }
+
+    public String getCode_version() {
+        return code_version;
+    }
+
+    public String getCrude_code() {
+        return crude_code;
     }
 
     @Override
