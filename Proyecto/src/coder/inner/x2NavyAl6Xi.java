@@ -5,6 +5,7 @@ import java.util.Map;
 
 /* renamed from: cu.etecsa.cubacel.tr.tm.EwFlR5uX8QJ.x2NavyAl6Xi */
 public class x2NavyAl6Xi {
+
     Map dictionaryCode = new HashMap();
 
     x2NavyAl6Xi() {

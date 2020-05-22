@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 class NZ5kBzhrWZTYM7x {
+
     String iBu38aCLWSsRGhH = BuildConfig.FLAVOR;
 
     /* renamed from: iBu38aCLWSsRGhH reason: collision with other field name */

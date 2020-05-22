@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Lcb96Uk5Xjuflq {
+
     int iBu38aCLWSsRGhH;
 
     /* renamed from: iBu38aCLWSsRGhH  reason: collision with other field name */

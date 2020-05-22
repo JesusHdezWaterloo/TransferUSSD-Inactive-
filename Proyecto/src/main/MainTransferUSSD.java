@@ -1,22 +1,21 @@
 package main;
 
+import coder.Operations;
 import coder.TransferUSSDCoder;
 import coder.Utils;
 
-/**
- *
- * @author Jesús Hernández Barrios (jhernandezb96@gmail.com)
- */
 public class MainTransferUSSD {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
+    static String miCuenta = "9224959870189170";
 
-            final String texter = TransferUSSDCoder.code("9204129972669206*1*58310867");
-            String ussdCode = "*" + "444" + "*" + "45" + "*" + texter + "*" + "1181102" + Utils.encode("#");
+    public static void main(String[] args) {
+        String cuentaLuisito = "9204129972669206";
+        String miCuenta = "9224959870189170";
+        String importe = "1";
+        String movil = "58310867";
+        for (int i = 0; i < 10; i++) {
+            String ussdCode = Operations.transferir(cuentaLuisito, importe, Operations.MONEDA_CUP,
+                    Operations.MONEDA_CUP, miCuenta, movil, Operations.ENVIAR_MI_MOVIL_NO, "");
             System.out.println(ussdCode);
             System.out.println("");
         }

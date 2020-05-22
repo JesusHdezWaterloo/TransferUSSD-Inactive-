@@ -4,6 +4,7 @@ import coder.BuildConfig;
 import java.util.List;
 
 class dblHR5MWQegMB1f {
+
     private int P5TrFEz5WQQhKQQ;
 
     /* renamed from: P5TrFEz5WQQhKQQ  reason: collision with other field name */
@@ -46,7 +47,7 @@ class dblHR5MWQegMB1f {
     private String pQE369dujkiIuKR(String str) {
         String str2 = BuildConfig.FLAVOR;
         int[] iArr = this.f497P5TrFEz5WQQhKQQ;
-        for (int i=0; i<iArr.length; i++){
+        for (int i = 0; i < iArr.length; i++) {
             str2 = str2 + String.valueOf(iArr[i]);
         }
 //        int i = 0;
