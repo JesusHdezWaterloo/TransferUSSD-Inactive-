@@ -21,7 +21,7 @@ public class TransferUSSDCoder {
         String str2;
         String[] split = str.split("\\*");
         int[] iArr = new int[split.length];
-        //String str3 = BuildConfig.FLAVOR;
+        String str3 = BuildConfig.FLAVOR;
         boolean z = false;
         for (int i = 0; i < split.length; i++) {
             if (isInteger(String.valueOf(split[i]))) {
@@ -31,7 +31,7 @@ public class TransferUSSDCoder {
                 z = true;
             }
         }
-        //new ArrayList();
+        new ArrayList();
         List asList = Arrays.asList(split);
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
@@ -63,8 +63,8 @@ public class TransferUSSDCoder {
             iBu38aCLWSsRGhH = new Lcb96Uk5Xjuflq(code.getCode_version(), code.getCrude_code()).iBu38aCLWSsRGhH(asList);
             str2 = ((String) iBu38aCLWSsRGhH.get(0)).length() == 1 ? "0" + ((String) iBu38aCLWSsRGhH.get(0)) : (String) iBu38aCLWSsRGhH.get(0);
         }
-        //String str4 = BuildConfig.FLAVOR;
-        //String str5 = BuildConfig.FLAVOR;
+        String str4 = BuildConfig.FLAVOR;
+        String str5 = BuildConfig.FLAVOR;
         String valueOf = String.valueOf(iArr[0]).length() == 1 ? "0" + String.valueOf(iArr[0]) : String.valueOf(iArr[0]);
         if (z && arrayList2.size() == 0) {
             str2 = "00" + valueOf + ((String) iBu38aCLWSsRGhH.get(0));
@@ -77,7 +77,7 @@ public class TransferUSSDCoder {
             int i6 = 1;
             String r4;
             while (i6 < iBu38aCLWSsRGhH.size()) {
-                //String str6 = BuildConfig.FLAVOR;
+                String str6 = BuildConfig.FLAVOR;
                 String valueOf2 = z ? String.valueOf(iArr[i6]) : String.valueOf(iArr[i6 - 1]);
                 String valueOf3 = valueOf2.length() == 1 ? "0" + String.valueOf(valueOf2) : String.valueOf(valueOf2);
                 r4 = z ? str2 + "*" + valueOf3 + ((String) iBu38aCLWSsRGhH.get(i6)) : i6 == 1 ? str2 + valueOf3 + ((String) iBu38aCLWSsRGhH.get(i6)) : str2 + "*" + valueOf3 + ((String) iBu38aCLWSsRGhH.get(i6));
