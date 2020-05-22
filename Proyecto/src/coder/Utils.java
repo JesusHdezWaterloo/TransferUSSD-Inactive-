@@ -13,6 +13,7 @@ public class Utils {
         try {
             return URLEncoder.encode("#", "UTF-8");
         } catch (UnsupportedEncodingException ex) {
+            ex.printStackTrace();
             return "#";
         }
     }
