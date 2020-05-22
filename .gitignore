@@ -29,3 +29,5 @@ hs_err_pid*
 /Proyecto/manifest.mf
 /Proyecto/cfg.json
 *.json
+
+index.html
