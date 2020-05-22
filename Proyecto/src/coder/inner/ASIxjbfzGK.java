@@ -1,12 +1,13 @@
-package cu.arrowtech.tranferussd;
+package coder.inner;
 
-import android.net.Uri;
-import cu.arrowtech.tranferussd.BuildConfig;
+import coder.BuildConfig;
+import coder.Utils;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 public class ASIxjbfzGK {
+
     x2NavyAl6Xi dictionaryCodePhone = new x2NavyAl6Xi();
 
     public String coding_message(String str) {
@@ -15,7 +16,7 @@ public class ASIxjbfzGK {
         int i = 0;
         while (i < str.length()) {
             if (Character.isDigit(str.charAt(i))) {
-                str2 = (i == 0 || !Character.isDigit(str.charAt(i + -1))) ? str2 + Uri.encode("#") + Character.toString(str.charAt(i)) : (i + 1 == str.length() || !Character.isDigit(str.charAt(i + 1))) ? str2 + Character.toString(str.charAt(i)) + Uri.encode("#") : str2 + Character.toString(str.charAt(i));
+                str2 = (i == 0 || !Character.isDigit(str.charAt(i + -1))) ? str2 + Utils.encode("#") + Character.toString(str.charAt(i)) : (i + 1 == str.length() || !Character.isDigit(str.charAt(i + 1))) ? str2 + Character.toString(str.charAt(i)) + Utils.encode("#") : str2 + Character.toString(str.charAt(i));
             } else if (this.dictionaryCodePhone.getCode(Character.toString(str.charAt(i))) != null) {
                 str2 = str2 + this.dictionaryCodePhone.getCode(Character.toString(str.charAt(i)));
             } else {

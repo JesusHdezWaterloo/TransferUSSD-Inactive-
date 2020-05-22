@@ -1,6 +1,6 @@
-package cu.arrowtech.tranferussd;
+package coder.inner;
 
-import cu.arrowtech.tranferussd.BuildConfig;
+import coder.BuildConfig;
 import java.util.List;
 
 class dblHR5MWQegMB1f {

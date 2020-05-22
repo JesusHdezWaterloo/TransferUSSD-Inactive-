@@ -1,6 +1,6 @@
-package cu.arrowtech.tranferussd;
+package coder.inner;
 
-import cu.arrowtech.tranferussd.BuildConfig;
+import coder.BuildConfig;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

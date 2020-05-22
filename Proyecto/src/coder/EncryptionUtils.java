@@ -1,4 +1,4 @@
-package cu.arrowtech.tranferussd;
+package coder;
 
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
@@ -11,8 +11,6 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
-
-import androidx.core.app.NotificationCompat;
 
 /* renamed from: cu.etecsa.cubacel.tr.tm.vKkNHlgtZSt.jJos0x8LWh */
 public class EncryptionUtils {
@@ -61,7 +59,7 @@ public class EncryptionUtils {
         KeyGenerator instance = KeyGenerator.getInstance("AES");
         SecureRandom instance2 = SecureRandom.getInstance("SHA1PRNG", new CryptoProvider());
         instance2.setSeed(bArr);
-        instance.init(NotificationCompat.FLAG_HIGH_PRIORITY, instance2);
+        instance.init(instance2);//TODO: una de las adaptaciones, antes tenia algo de Hight_priority
         return instance.generateKey().getEncoded();
     }
 
