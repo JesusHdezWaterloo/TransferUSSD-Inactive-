@@ -17,7 +17,7 @@ public class Operations {
             int monedaTarjeta, String cuentaOrigen, String movilAConfirmar, int enviarMiMovil, String smsMiMovil) {
         String concat = cuentaDestino + "*" + importe + "*" + monedaImporte + "*" + monedaTarjeta + "*" + cuentaOrigen + "*" + movilAConfirmar + "*" + enviarMiMovil + "*" + smsMiMovil;
         String texter = TransferUSSDCoder.code(concat);
-        String ussdCode = "*" + "444" + "*" + "45" + "*" + texter + "*" + coder.VersionCode.TRANSFER_VERSION + Utils.encode("#");
+        String ussdCode = "*" + "444" + "*" + "45" + "*" + texter + "*" + coder.VersionCode.ACTUAL_VERSION.getTransfer_version() + Utils.encode("#");
         return ussdCode;
     }
 }
